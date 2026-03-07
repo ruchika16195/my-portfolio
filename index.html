@@ -1,132 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ruchika Sharma - Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruchika Sharma | Portfolio</title>
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #f4f4f4;
-      --text: #333;
-      --card: #ffffff;
-    }
-    [data-theme="dark"] {
-      --bg: #1e1e1e;
-      --text: #f1f1f1;
-      --card: #2c2c2c;
-    }
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: var(--bg);
-      color: var(--text);
-      transition: background 0.3s, color 0.3s;
-    }
-    header {
-      background: #2c3e50;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      position: relative;
-    }
-    .dark-toggle {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
-      background: white;
-      color: black;
-      border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      background: var(--card);
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      transition: background 0.3s;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .resume-btn {
-      display: inline-block;
-      margin-top: 1rem;
-      background-color: #2980b9;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
-    .resume-btn:hover {
-      background-color: #1c5980;
-    }
-  </style>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>Ruchika Sharma</h1>
-    <h2>Senior Scientist I - Informatics</h2>
-    <button class="dark-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-  </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I am a Data Engineer, with strong interpersonal skills and over 5 years of experience handling technical aspects of healthcare data. Skilled in multi-omics data processing, workflow design, and project management. Interested in Product Management, especially in the healthcare sector.</p>
-    <a class="resume-btn" href="/resume.pdf" download>Download Resume</a>
-  </section>
+<header>
+  <h1>Ruchika Sharma</h1>
+  <p>Senior Scientist I - Informatics</p>
+</header>
 
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Master of Technology (MTech)</strong>, Bioinformatics, Centre for Converging Technologies, UOR — 2017 - 2018 (Grade: 7.2/10)</li>
-      <li><strong>Bachelor of Technology (BTech)</strong>, Bioinformatics, Centre for Converging Technologies, UOR — 2013 - 2017 (Grade: 4.6/6)</li>
-    </ul>
-  </section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <section>
-    <h2>Skills</h2>
-    <p>Python, Airflow, Apache Kafka, Jupyter, Azure Databricks, Oracle, ETL, Agile, Clinical Trials, AWS Lambda, Redshift, Jenkins, MongoDB, SDLC, SQL, Docker, Git, Power BI, Data Wrangling, Data Visualization, Machine Learning, Deep Learning, Bioinformatics, Statistical Modeling, Biostatistics, Computational Biology, Transcriptomics</p>
-  </section>
+<section id="about">
+  <h2>About Me</h2>
+  <p>Short professional introduction.</p>
+</section>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>AWS: Storage and Data Management – Issued Dec 2024</li>
-      <li>Bio-IT Centre, IBAB Bengaluru</li>
-    </ul>
-  </section>
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Python</li>
+    <li>Azure</li>
+    <li>Airflow</li>
+  </ul>
+</section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li>Exome Sequencing, Variant Prioritization, Mutation Burden Analysis, SIFT, POLYPHEN, UCSC Encode tracks</li>
-      <li>Omics Data Integration and Automation | Patient Stratification | AI-driven Bio-marker Identification | Drug Discovery</li>
-      <li>Pipeline Automation using Python, AWS Step Function, Dockerized Module Integration, Workflow Logic, SDLC</li>
-    </ul>
-  </section>
+<section id="projects">
+  <h2>Projects</h2>
+</section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:ruchika16195@gmail.com">ruchika16195@gmail.com</a></p>
-    <p>Phone: +91-7062626323</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/ruchika-sharma-b8b35a11a/">Ruchika Sharma</a></p>
-  </section>
+<section id="education">
+  <h2>Education</h2>
+</section>
 
-  <script>
-    function toggleDarkMode() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      document.documentElement.setAttribute('data-theme', currentTheme === 'dark' ? 'light' : 'dark');
-    }
-  </script>
+<section id="contact">
+  <h2>Contact</h2>
+</section>
+
+<footer>
+  <p>© 2026 Ruchika Sharma</p>
+</footer>
+
 </body>
 </html>
